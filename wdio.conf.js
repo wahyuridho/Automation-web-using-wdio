@@ -22,7 +22,9 @@ export const config = {
     //
     specs: [
         // ToDo: define location for spec files here
-        './test/specs/*'
+        // './test/specs/*'
+        // './test/specs/cek.spec.js'
+        './test/specs/test.spec.js'
     ],
     // Patterns to exclude.
     exclude: [
@@ -86,6 +88,7 @@ export const config = {
     // If your `url` parameter starts without a scheme or `/` (like `some/path`), the base url
     // gets prepended directly.
     baseUrl: 'https://www.saucedemo.com',
+    // baseUrl: 'https://sanbercode.com/login',
     //
     // Default timeout for all waitFor* commands.
     waitforTimeout: 10000,
@@ -124,7 +127,7 @@ export const config = {
     // Test reporter for stdout.
     // The only one supported by default is 'dot'
     // see also: https://webdriver.io/docs/dot-reporter
-    reporters: ['spec'],
+    reporters: ['allure'],
 
     // Options to be passed to Mocha.
     // See the full list at http://mochajs.org/

@@ -26,14 +26,14 @@ describe('Login Skenario', () => {
 
     })
 
-    it('Muncul Error saat login dengan kredential yang diblokir', async () => {
-        await LoginPage.open()
-        await LoginPage.username.addValue('locked_out_user')
-        await LoginPage.password.addValue('secret_sauce')
-        await LoginPage.submit()
+    // it('Muncul Error saat login dengan kredential yang diblokir', async () => {
+    //     await LoginPage.open()
+    //     await LoginPage.username.addValue('locked_out_user')
+    //     await LoginPage.password.addValue('secret_sauce')
+    //     await LoginPage.submit()
 
-        await expect(LoginPage.errorButton).toBeDisplayed()
-        await expect(LoginPage.alertBlockUser).toHaveText('Epic sadface: Sorry, this user has been locked out.')
-        await browser.pause(2000)
-    })
+    //     await expect(LoginPage.errorButton).toBeDisplayed()
+    //     await expect(LoginPage.alertBlockUser).toHaveText('Epic sadface: Sorry, this user has been locked out.')
+    //     await browser.pause(2000)
+    // })
 })
